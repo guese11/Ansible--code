@@ -2076,3 +2076,34 @@ The offending line appears to be:
 2023-05-27 04:04:56,481 p=8754 u=ec2-user n=ansible | skipping: [3.239.222.137]
 2023-05-27 04:04:56,515 p=8754 u=ec2-user n=ansible | PLAY RECAP *********************************************************************************************
 2023-05-27 04:04:56,515 p=8754 u=ec2-user n=ansible | 3.239.222.137              : ok=7    changed=1    unreachable=0    failed=0    skipped=7    rescued=0    ignored=0   
+2023-05-27 04:33:38,201 p=10524 u=ec2-user n=ansible | PLAY [qaserver] ****************************************************************************************
+2023-05-27 04:33:38,217 p=10524 u=ec2-user n=ansible | TASK [Gathering Facts] *********************************************************************************
+2023-05-27 04:33:39,997 p=10524 u=ec2-user n=ansible | ok: [3.239.222.137]
+2023-05-27 04:33:40,019 p=10524 u=ec2-user n=ansible | TASK [apache : install Appache] ************************************************************************
+2023-05-27 04:33:41,047 p=10524 u=ec2-user n=ansible | ok: [3.239.222.137]
+2023-05-27 04:33:41,074 p=10524 u=ec2-user n=ansible | TASK [apache : copy index file] ************************************************************************
+2023-05-27 04:33:42,090 p=10524 u=ec2-user n=ansible | ok: [3.239.222.137]
+2023-05-27 04:33:42,112 p=10524 u=ec2-user n=ansible | TASK [java : Include OS-specific variables for Fedora or FreeBSD.] *************************************
+2023-05-27 04:33:42,125 p=10524 u=ec2-user n=ansible | skipping: [3.239.222.137]
+2023-05-27 04:33:42,137 p=10524 u=ec2-user n=ansible | TASK [java : Include version-specific variables for CentOS/RHEL.] **************************************
+2023-05-27 04:33:42,150 p=10524 u=ec2-user n=ansible | skipping: [3.239.222.137]
+2023-05-27 04:33:42,162 p=10524 u=ec2-user n=ansible | TASK [java : Include version-specific variables for Ubuntu.] *******************************************
+2023-05-27 04:33:42,173 p=10524 u=ec2-user n=ansible | skipping: [3.239.222.137]
+2023-05-27 04:33:42,185 p=10524 u=ec2-user n=ansible | TASK [java : Include version-specific variables for Amazon.] *******************************************
+2023-05-27 04:33:42,214 p=10524 u=ec2-user n=ansible | ok: [3.239.222.137]
+2023-05-27 04:33:42,226 p=10524 u=ec2-user n=ansible | TASK [java : Include version-specific variables for Debian.] *******************************************
+2023-05-27 04:33:42,237 p=10524 u=ec2-user n=ansible | skipping: [3.239.222.137]
+2023-05-27 04:33:42,249 p=10524 u=ec2-user n=ansible | TASK [java : Define java_packages.] ********************************************************************
+2023-05-27 04:33:42,294 p=10524 u=ec2-user n=ansible | ok: [3.239.222.137]
+2023-05-27 04:33:42,307 p=10524 u=ec2-user n=ansible | TASK [java : include_tasks] ****************************************************************************
+2023-05-27 04:33:42,331 p=10524 u=ec2-user n=ansible | included: /home/ec2-user/roles/java/tasks/setup-RedHat.yml for 3.239.222.137
+2023-05-27 04:33:42,344 p=10524 u=ec2-user n=ansible | TASK [java : Ensure Java is installed.] ****************************************************************
+2023-05-27 04:34:14,753 p=10524 u=ec2-user n=ansible | changed: [3.239.222.137]
+2023-05-27 04:34:14,768 p=10524 u=ec2-user n=ansible | TASK [java : include_tasks] ****************************************************************************
+2023-05-27 04:34:14,794 p=10524 u=ec2-user n=ansible | skipping: [3.239.222.137]
+2023-05-27 04:34:14,820 p=10524 u=ec2-user n=ansible | TASK [java : include_tasks] ****************************************************************************
+2023-05-27 04:34:14,834 p=10524 u=ec2-user n=ansible | skipping: [3.239.222.137]
+2023-05-27 04:34:14,848 p=10524 u=ec2-user n=ansible | TASK [java : Set JAVA_HOME if configured.] *************************************************************
+2023-05-27 04:34:14,867 p=10524 u=ec2-user n=ansible | skipping: [3.239.222.137]
+2023-05-27 04:34:14,900 p=10524 u=ec2-user n=ansible | PLAY RECAP *********************************************************************************************
+2023-05-27 04:34:14,901 p=10524 u=ec2-user n=ansible | 3.239.222.137              : ok=7    changed=1    unreachable=0    failed=0    skipped=7    rescued=0    ignored=0   
