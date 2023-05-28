@@ -1059,3 +1059,87 @@ The offending line appears to be:
 2023-05-14 22:17:14,096 p=4170 u=ec2-user n=ansible | ...ignoring
 2023-05-14 22:17:14,118 p=4170 u=ec2-user n=ansible | PLAY RECAP ******************************************************************************************************************************
 2023-05-14 22:17:14,118 p=4170 u=ec2-user n=ansible | 54.161.72.221              : ok=6    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=1   
+2023-05-28 00:48:58,428 p=3859 u=ec2-user n=ansible | Starting galaxy collection install process
+2023-05-28 00:48:58,428 p=3859 u=ec2-user n=ansible | Process install dependency map
+2023-05-28 00:48:58,431 p=3859 u=ec2-user n=ansible | |
+2023-05-28 00:48:58,533 p=3859 u=ec2-user n=ansible | /
+2023-05-28 00:48:58,634 p=3859 u=ec2-user n=ansible | -
+2023-05-28 00:48:58,734 p=3859 u=ec2-user n=ansible | \
+2023-05-28 00:48:58,835 p=3859 u=ec2-user n=ansible | |
+2023-05-28 00:48:58,948 p=3859 u=ec2-user n=ansible | /
+2023-05-28 00:48:59,050 p=3859 u=ec2-user n=ansible | -
+2023-05-28 00:48:59,150 p=3859 u=ec2-user n=ansible | \
+2023-05-28 00:48:59,251 p=3859 u=ec2-user n=ansible | |
+2023-05-28 00:48:59,352 p=3859 u=ec2-user n=ansible | Starting collection install process
+2023-05-28 00:48:59,353 p=3859 u=ec2-user n=ansible | |
+2023-05-28 00:48:59,354 p=3859 u=ec2-user n=ansible | Downloading https://galaxy.ansible.com/download/amazon-aws-6.0.1.tar.gz to /home/ec2-user/.ansible/tmp/ansible-local-3859i1ary1zy/tmpmn6nqzr4/amazon-aws-6.0.1-q0gjngwh
+2023-05-28 00:48:59,454 p=3859 u=ec2-user n=ansible | /
+2023-05-28 00:48:59,557 p=3859 u=ec2-user n=ansible | Installing 'amazon.aws:6.0.1' to '/home/ec2-user/.ansible/collections/ansible_collections/amazon/aws'
+2023-05-28 00:48:59,558 p=3859 u=ec2-user n=ansible | -
+2023-05-28 00:48:59,660 p=3859 u=ec2-user n=ansible | \
+2023-05-28 00:48:59,761 p=3859 u=ec2-user n=ansible | |
+2023-05-28 00:48:59,863 p=3859 u=ec2-user n=ansible | /
+2023-05-28 00:48:59,964 p=3859 u=ec2-user n=ansible | -
+2023-05-28 00:49:00,066 p=3859 u=ec2-user n=ansible | \
+2023-05-28 00:49:00,167 p=3859 u=ec2-user n=ansible | |
+2023-05-28 00:49:00,269 p=3859 u=ec2-user n=ansible | /
+2023-05-28 00:49:00,370 p=3859 u=ec2-user n=ansible | amazon.aws:6.0.1 was installed successfully
+2023-05-28 01:15:16,000 p=5466 u=ec2-user n=ansible | {
+    "_meta": {
+        "hostvars": {
+            "3.238.93.224": {
+                "ansible_ssh_private_key_file": "/home/ec2-user/keypair.pem"
+            },
+            "44.203.98.2": {
+                "ansible_ssh_private_key_file": "/home/ec2-user/keypair.pem"
+            }
+        }
+    },
+    "all": {
+        "children": [
+            "devserver",
+            "qaserver",
+            "ungrouped"
+        ]
+    },
+    "devserver": {
+        "hosts": [
+            "44.203.98.2"
+        ]
+    },
+    "qaserver": {
+        "hosts": [
+            "3.238.93.224"
+        ]
+    }
+}
+2023-05-28 01:16:12,234 p=5547 u=ec2-user n=ansible | @all:
+  |--@devserver:
+  |  |--44.203.98.2
+  |--@qaserver:
+  |  |--3.238.93.224
+  |--@ungrouped:
+2023-05-28 01:18:35,506 p=5605 u=ec2-user n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: dev
+
+2023-05-28 01:18:35,507 p=5605 u=ec2-user n=ansible | [WARNING]: No hosts matched, nothing to do
+
+2023-05-28 01:25:55,931 p=5670 u=ec2-user n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: dev
+
+2023-05-28 01:25:55,934 p=5670 u=ec2-user n=ansible | [WARNING]: No hosts matched, nothing to do
+
+2023-05-28 01:26:45,359 p=5708 u=ec2-user n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: dev
+
+2023-05-28 01:26:45,359 p=5708 u=ec2-user n=ansible | [WARNING]: No hosts matched, nothing to do
+
+2023-05-28 01:27:08,629 p=5761 u=ec2-user n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: dev
+
+2023-05-28 01:27:08,630 p=5761 u=ec2-user n=ansible | [WARNING]: No hosts matched, nothing to do
+
+2023-05-28 01:27:25,648 p=5798 u=ec2-user n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: qa
+
+2023-05-28 01:27:25,648 p=5798 u=ec2-user n=ansible | [WARNING]: No hosts matched, nothing to do
+
+2023-05-28 01:27:52,244 p=5845 u=ec2-user n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: qa
+
+2023-05-28 01:27:52,244 p=5845 u=ec2-user n=ansible | [WARNING]: No hosts matched, nothing to do
+
